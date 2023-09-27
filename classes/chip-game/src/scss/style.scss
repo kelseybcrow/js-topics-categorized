@@ -1,0 +1,25 @@
+@mixin chip {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: pink;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  font-size: 30pt;
+  font-family: Avenir;
+  font-weight: bold;
+  position: absolute;
+}
+
+.chip {
+  @include chip;
+}
+
+#score {
+  font-size: 30pt;
+  font-family: Avenir;
+  font-weight: bold;
+  position: fixed;
+  z-index: -1;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .stop-on {
+        background-image: url(stop-on.svg);
+        height: 100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .stop-off {
+        background-image: url(stop-off.svg);
+        height: 100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .walk-on {
+        background-image: url(walk-on.svg);
+        height: 100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .walk-off {
+        background-image: url(walk-off.svg);
+        height: 100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      img {
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="lights">
+        <button id="btn">Cross road</button>
+        <div id="countdown"></div>
+
+        <div id="stoplight" class="stop-on"></div>
+        <div id="walklight" class="walk-off"></div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
