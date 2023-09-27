@@ -29,3 +29,5 @@ search.addEventListener('keyup', (event) => {
   console.log(filtered);
   buildList(filtered);
 });
+
+console.log('hello');
