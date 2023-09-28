@@ -6,13 +6,6 @@ export class ProgressBar {
     this.maxValue = 10;
     this.element = document.createElement('div');
     this.refreshElement();
-
-    //@TODO no.4
-    //  make it possible to create progress bar with any default value.
-    //  this value should be passed to constructor
-
-    //@TODO no.5
-    //  go back to script.js and create more progressBars, see how easy it is to reuse this component
   }
 
   refreshElement() {
@@ -41,11 +34,6 @@ export class ProgressBar {
     minusBtn.addEventListener('click', () => {
       this.value = Math.max(this.minValue, this.value - this.gradient);
       this.refreshElement();
-      // if (this.value >= 1) {
-      //   this.value--;
-      // }
     });
-    //@TODO no.3
-    //  implement logic for minus button. if you decrease the value, make sure, it is not less then 0
   }
 }
